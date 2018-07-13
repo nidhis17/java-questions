@@ -1,1 +1,23 @@
+how arraylist works internally in java
+
+how vector works internally in java?
+
+how CopyOnWriteArrayList Works Internally in Java
+   copy on write provides thread safe way of using Array List. it doesn't have initial capacity of 10 like in ArrayList.  AL is a fail fast while copyONWrite is fail safe
+   It prevents concurrentModificationException, suppose more than one threads are working on the AL and one of them is making the modification of arraylist via structurally
+   but other threads are having old copy of AL.
+   this is used mainly if only reading and traversing is required more than, mutating the list. the copyonwritarraylist iterator is fail safe as it does not have remove method
+   so so it wont cause any change in copy of existing arraylist. It will not throw concurrentmodification exception.
+   it uses snapshot style.
+   
+how linkedlist works internally
+
+when to use arraylist and when linked list
+
+difference between arrayList and vector in java? regrading thread safety and iteration way as vector use iterator and enumeration
+difference between arrayList and LinkedList
+diff btw AL and copyonwriteArrayList
+difference between enumeration and iterator
+diff btw iterator and listiterator
+fail safe and fail fast in java and difference between them and example too
 
